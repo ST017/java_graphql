@@ -1,0 +1,88 @@
+type Query{
+    Account(z:Int):[Root]
+}
+
+type Root{
+    id:ID
+    flist:Flist
+}
+
+type Flist{
+    id:ID!
+    BRAND_OBJ:String
+
+    CURRENCY_SECONDARY:Int
+    ACCOUNT_TYPE:Int
+    NEXT_ITEM_POID_LIST:String
+    WRITE_ACCESS:String
+    READ_ACCESS:String
+    INCORPORATED_FLAG:Int
+    ACCOUNT_TAG:String
+    TIMEZONE_ID:String
+    VAT_CERT:String
+    STATUS:Int
+    INTERNAL_NOTES:INTERNAL_NOTES
+    MOD_T:Int
+    BUSINESS_TYPE:Int
+    GL_SEGMENT:String
+    STATUS_FLAGS:Int
+    BAL_GRP_OBJ:String
+    LASTSTAT_CMNT:String
+    NAMEINFO:NAMEINFO
+    AAC_ACCESS:String
+    CREATED_T:Int
+    CURRENCY:Int
+    ITEM_POID_LIST:String
+    OBJECT_CACHE_TYPE:Int
+    ATTRIBUTE:Int
+    AAC_PACKAGE:String
+    AAC_PROMO_CODE:String
+    NAME:String
+    AAC_SOURCE:String
+    GROUP_OBJ:String
+    ACCESS_CODE1:String
+    AAC_VENDOR:String
+    ACCESS_CODE2:String
+    LOCALE:String
+    RESIDENCE_FLAG:Int
+    LAST_STATUS_T:Int
+    AAC_SERIAL_NUM:String
+    EFFECTIVE_T:Int
+    ACCOUNT_NO:String
+    CLOSE_WHEN_T:Int
+    CUSTOMER_SEGMENT_LIST:String
+    LINEAGE:String
+    POID:String
+
+
+
+}
+type NAMEINFO{
+    elem:Int
+    LAST_CANON:String
+    ZIP:Int
+    MIDDLE_CANON:String
+    EMAIL_ADDR:String
+    STATE:String
+    CANON_COUNTRY:String
+    LAST_NAME:String
+    FIRST_NAME:String
+    COMPANY:String
+    CITY:String
+    CONTACT_TYPE:String
+    COUNTRY:String
+    SALUTATION:String
+    ADDRESS:String
+    CANON_COMPANY:String
+    MIDDLE_NAME:String
+    TITLE:String
+    SERVICE_OBJ:String
+    FIRST_CANON:String
+
+}
+type INTERNAL_NOTES{
+    id:ID
+    offset:Int
+    size:Int
+    flags:String
+}
